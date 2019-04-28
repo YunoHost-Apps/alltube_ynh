@@ -6,9 +6,9 @@
         "en": "Alltube package for YunoHost.",
         "fr": "Package Alltube pour YunoHost."
     },
-    "version": "1.2.5~ynh1",
+    "version": "2.0.1~ynh1",
     "url": "http://alltubedownload.net/",
-    "license": "GPL",
+    "license": "GPL-3.0-only",
     "maintainer": {
         "name": "plopoyop",
         "email": "plopoyop@gmail.com"

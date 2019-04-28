@@ -12,7 +12,7 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 Alltube est une IHM web pour Youtube-dl.
 
 
-**Version incluse:** 1.2.5
+**Version incluse:** 2.0.1
 
 ## Captures d'écran
 
