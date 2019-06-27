@@ -3,10 +3,10 @@
     "id": "alltube",
     "packaging_format": 1,
     "description": {
-        "en": "Alltube package for YunoHost.",
-        "fr": "Package Alltube pour YunoHost."
+        "en": "Youtube-dl frontend in php",
+        "fr": "Php frontend pour youtube-dl."
     },
-    "version": "2.0.1~ynh1",
+    "version": "2.0.4~ynh1",
     "url": "http://alltubedownload.net/",
     "license": "GPL-3.0-only",
     "maintainer": {
