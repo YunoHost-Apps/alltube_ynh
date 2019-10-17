@@ -3,8 +3,8 @@
     "id": "alltube",
     "packaging_format": 1,
     "description": {
-        "en": "Alltube package for YunoHost.",
-        "fr": "Package Alltube pour YunoHost."
+        "en": "A web interface for Youtube-dl",
+        "fr": "Un interface web pour Youtube-dl"
     },
     "version": "2.0.1~ynh1",
     "url": "http://alltubedownload.net/",
