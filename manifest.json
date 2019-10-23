@@ -6,7 +6,7 @@
         "en": "Youtube-dl frontend in php",
         "fr": "Php frontend pour youtube-dl."
     },
-    "version": "2.0.4~ynh1",
+    "version": "2.0.5~ynh1",
     "url": "http://alltubedownload.net/",
     "license": "GPL-3.0-only",
     "maintainer": {
