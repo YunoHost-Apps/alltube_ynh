@@ -5,7 +5,7 @@
 #=================================================
 
 # dependencies used by the app
-pkg_dependencies="php-intl php-curl php-mbstring libav-tools"
+pkg_dependencies="php-intl php-curl php-mbstring libav-tools|ffmpeg"
 
 #=================================================
 # PERSONAL HELPERS
