@@ -1,6 +1,6 @@
 ---
 # Path to your youtube-dl binary
-youtubedl: vendor/rg3/youtube-dl/youtube_dl/__main__.py
+youtubedl: vendor/ytdl-org/youtube-dl/youtube_dl/__main__.py
 
 # Path to your python binary
 python: /usr/bin/python
@@ -23,7 +23,7 @@ convertAdvanced: false
 convertAdvancedFormats: [mp3, avi, flv, wav]
 
 # Path to your avconv or ffmpeg binary
-avconv: /usr/bin/avconv
+avconv: /usr/bin/ffmpeg
 
 # avconv/ffmpeg logging level.
 avconvVerbosity: error
