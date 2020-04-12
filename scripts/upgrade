@@ -119,6 +119,7 @@ ynh_store_file_checksum "$final_path/config/config.yml"
 
 # Set permissions on app files
 chown -R root: $final_path
+chown -R alltube: $final_path/templates_c/
 
 #=================================================
 # SETUP SSOWAT
