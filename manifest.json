@@ -6,7 +6,7 @@
         "en": "A web interface for Youtube-dl",
         "fr": "Un interface web pour Youtube-dl"
     },
-    "version": "2.2.1~ynh1",
+    "version": "2.2.1~ynh2",
     "url": "http://alltubedownload.net/",
     "license": "GPL-3.0-only",
     "maintainer": {
@@ -14,7 +14,7 @@
         "email": "plopoyop@gmail.com"
     },
     "requirements": {
-        "yunohost": ">= 3.4"
+        "yunohost": ">= 3.7"
     },
     "multi_instance": true,
     "services": [

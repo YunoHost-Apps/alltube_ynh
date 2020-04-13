@@ -14,7 +14,7 @@ source /usr/share/yunohost/helpers
 #=================================================
 # LOAD SETTINGS
 #=================================================
-ynh_print_info "Loading installation settings..."
+ynh_script_progression --message="Loading settings.." --weight=1
 
 app=$YNH_APP_INSTANCE_NAME
 
@@ -26,7 +26,7 @@ final_path=$(ynh_app_setting_get $app final_path)
 #=================================================
 # BACKUP BEFORE UPGRADE THEN ACTIVE TRAP
 #=================================================
-ynh_print_info "Backing up the app before upgrading (may take a while)..."
+ynh_script_progression --message="Backing up the app before upgrading (may take a while)..." --weight=30
 
 # Backup the current version of the app
 ynh_backup_before_upgrade
@@ -42,7 +42,7 @@ current_version=${current_version/ /''}
 #=================================================
 # ENSURE DOWNWARD COMPATIBILITY
 #=================================================
-ynh_print_info "Ensuring downward compatibility..."
+ynh_script_progression --message="Ensuring downward compatibility.." --weight=1
 
 if [  "2.2.1~ynh1" != "`echo -e "2.2.1~ynh1\n$current_version" | sort -V | head -n1`" ]; then
 	ynh_remove_fpm_config
@@ -68,7 +68,7 @@ fi
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_print_info "Upgrading source files..."
+ynh_script_progression --message="Upgrading source files..." --weight=6
 
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source "$final_path"
@@ -76,7 +76,7 @@ ynh_setup_source "$final_path"
 #=================================================
 # NGINX CONFIGURATION
 #=================================================
-ynh_print_info "Upgrading nginx web server configuration..."
+ynh_script_progression --message="Upgrading nginx web server configuration..." --weight=2
 
 # Create a dedicated nginx config
 ynh_add_nginx_config
@@ -84,7 +84,8 @@ ynh_add_nginx_config
 #=================================================
 # UPGRADE DEPENDENCIES
 #=================================================
-ynh_print_info "Upgrading dependencies..."
+ynh_script_progression --message="Upgrading dependencies..." --weight=60
+
 
 ynh_install_app_dependencies $pkg_dependencies
 ynh_install_php --phpversion="$YNH_PHP_VERSION" --package="$extra_pkg_dependencies"
@@ -92,7 +93,7 @@ ynh_install_php --phpversion="$YNH_PHP_VERSION" --package="$extra_pkg_dependenci
 #=================================================
 # CREATE DEDICATED USER
 #=================================================
-ynh_print_info "Making sure dedicated system user exists..."
+ynh_script_progression --message="Making sure dedicated system user exists..." --weight=2
 
 # Create a dedicated user (if not existing)
 ynh_system_user_create $app
@@ -100,7 +101,7 @@ ynh_system_user_create $app
 #=================================================
 # PHP-FPM CONFIGURATION
 #=================================================
-ynh_print_info "Upgrading php-fpm configuration..."
+ynh_script_progression --message="Upgrading php-fpm configuration..." --weight=1
 
 # Create a dedicated php-fpm config
 ynh_add_fpm_config --phpversion="$YNH_PHP_VERSION"
@@ -124,19 +125,23 @@ chown -R alltube: $final_path/templates_c/
 #=================================================
 # SETUP SSOWAT
 #=================================================
-ynh_print_info "Upgrading SSOwat configuration..."
+ynh_script_progression --message="Configuring SSOwat..." --weight=1
 
 # Make app public if necessary
 if [ $is_public -eq 1 ]
 then
-	# unprotected_uris allows SSO credentials to be passed anyway
-	ynh_app_setting_set $app unprotected_uris "/"
+	ynh_permission_update --permission "main" --add visitors
+fi
+
+unprotected_uris=$(ynh_app_setting_get --app=$app --key=unprotected_uris)
+if [ ! -z "$unprotected_uris" ]; then
+    ynh_app_setting_delete --app=$app --key=unprotected_uris
 fi
 
 #=================================================
 # RELOAD NGINX
 #=================================================
-ynh_print_info "Reloading nginx web server..."
+ynh_script_progression --message="Reloading nginx web server..." --weight=1
 
 systemctl reload nginx
 
@@ -144,4 +149,4 @@ systemctl reload nginx
 # END OF SCRIPT
 #=================================================
 
-ynh_print_info "Upgrade of $app completed"
+ynh_script_progression --message="Upgrade of $app completed" --last
