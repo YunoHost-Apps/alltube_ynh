@@ -10,16 +10,6 @@
 source ../settings/scripts/_common.sh
 source /usr/share/yunohost/helpers
 
-current_version=$(yunohost app info alltube | grep version | cut -d ':' -f 2)
-current_version=${current_version/ /''}
-
-if [  "2.2.1~ynh1" != "`echo -e "2.2.1~ynh1\n$current_version" | sort -V | head -n1`" ]; then
-	CURRENT_PHP_VERSION="7.0"
-else
-	CURRENT_PHP_VERSION="7.3"
-fi
-
-
 #=================================================
 # MANAGE SCRIPT FAILURE
 #=================================================
@@ -37,6 +27,7 @@ app=$YNH_APP_INSTANCE_NAME
 final_path=$(ynh_app_setting_get $app final_path)
 domain=$(ynh_app_setting_get $app domain)
 db_name=$(ynh_app_setting_get $app db_name)
+fpm_config_dir=$(ynh_app_setting_get $app fpm_config_dir)
 
 #=================================================
 # STANDARD BACKUP STEPS
@@ -59,7 +50,7 @@ ynh_backup "/etc/nginx/conf.d/$domain.d/$app.conf"
 #=================================================
 ynh_script_progression --message="Backing up php-fpm configuration..." --weight=1
 
-ynh_backup "/etc/php/$CURRENT_PHP_VERSION/fpm/pool.d/$app.conf"
+ynh_backup "$fpm_config_dir/pool.d/$app.conf"
 
 #=================================================
 # END OF SCRIPT

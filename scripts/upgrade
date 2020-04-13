@@ -22,6 +22,7 @@ domain=$(ynh_app_setting_get $app domain)
 path_url=$(ynh_app_setting_get $app path)
 is_public=$(ynh_app_setting_get $app is_public)
 final_path=$(ynh_app_setting_get $app final_path)
+fpm_service=$(ynh_app_setting_get $app fpm_service)
 
 #=================================================
 # BACKUP BEFORE UPGRADE THEN ACTIVE TRAP
@@ -37,14 +38,12 @@ ynh_clean_setup () {
 # Exit if an error occurs during the execution of the script
 ynh_abort_if_errors
 
-current_version=$(yunohost app info alltube | grep version | cut -d ':' -f 2)
-current_version=${current_version/ /''}
 #=================================================
 # ENSURE DOWNWARD COMPATIBILITY
 #=================================================
 ynh_script_progression --message="Ensuring downward compatibility.." --weight=1
 
-if [  "2.2.1~ynh1" != "`echo -e "2.2.1~ynh1\n$current_version" | sort -V | head -n1`" ]; then
+if [ "$fpm_service" = "php7.0-fpm" ]; then
 	ynh_remove_fpm_config
 fi
 
