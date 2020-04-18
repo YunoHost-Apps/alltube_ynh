@@ -8,6 +8,8 @@
 
 #Keep this path for calling _common.sh inside the execution's context of backup and restore scripts
 source ../settings/scripts/_common.sh
+source ../settings/scripts/ynh_add_extra_apt_repos
+source ../settings/scripts/ynh_install_php
 source /usr/share/yunohost/helpers
 
 #=================================================
@@ -20,18 +22,20 @@ ynh_abort_if_errors
 #=================================================
 # LOAD SETTINGS
 #=================================================
-ynh_print_info "Loading settings..."
+ynh_script_progression --message="Loading settings.."
 
 app=$YNH_APP_INSTANCE_NAME
 
 domain=$(ynh_app_setting_get $app domain)
 path_url=$(ynh_app_setting_get $app path)
 final_path=$(ynh_app_setting_get $app final_path)
+fpm_config_dir=$(ynh_app_setting_get $app fpm_config_dir)
+fpm_service=$(ynh_app_setting_get $app fpm_service)
 
 #=================================================
 # CHECK IF THE APP CAN BE RESTORED
 #=================================================
-ynh_print_info "Validating restoration parameters..."
+ynh_script_progression --message="Validating restoration parameters.." --weight=1
 
 ynh_webpath_available $domain $path_url \
 	|| ynh_die "Path not available: ${domain}${path_url}"
@@ -49,14 +53,14 @@ ynh_restore_file "/etc/nginx/conf.d/$domain.d/$app.conf"
 #=================================================
 # RESTORE THE APP MAIN DIR
 #=================================================
-ynh_print_info "Restoring the app main directory..."
+ynh_script_progression --message="Restoring the app main directory.." --weight=1
 
 ynh_restore_file "$final_path"
 
 #=================================================
 # RECREATE THE DEDICATED USER
 #=================================================
-ynh_print_info "Recreating the dedicated system user..."
+ynh_script_progression --message="Recreating the dedicated system user.." --weight=1
 
 # Create the dedicated user (if not existing)
 ynh_system_user_create $app
@@ -67,35 +71,42 @@ ynh_system_user_create $app
 
 # Restore permissions on app files
 chown -R root: $final_path
+chown -R alltube: $final_path/templates_c/
 
 #=================================================
 # RESTORE THE PHP-FPM CONFIGURATION
 #=================================================
 
-ynh_restore_file "/etc/php/7.0/fpm/pool.d/$app.conf"
+ynh_restore_file --origin_path="$fpm_config_dir/pool.d/$app.conf"
 
 #=================================================
 # SPECIFIC RESTORATION
 #=================================================
 # REINSTALL DEPENDENCIES
 #=================================================
-ynh_print_info "Reinstalling dependencies..."
+ynh_script_progression --message="Reinstalling dependencies.." --weight=60
 
 # Define and install dependencies
-ynh_install_app_dependencies $pkg_dependencies
+if [ "$fpm_service" = "php7.0-fpm" ]; then
+	apt_dependencies=$(ynh_app_setting_get $app apt_dependencies)
+	ynh_install_app_dependencies $apt_dependencie
+else
+	ynh_install_app_dependencies $pkg_dependencies
+	ynh_install_php --phpversion="$YNH_PHP_VERSION" --package="$extra_pkg_dependencies"
+fi
 
 #=================================================
 # GENERIC FINALIZATION
 #=================================================
 # RELOAD NGINX AND PHP-FPM
 #=================================================
-ynh_print_info "Reloading nginx web server and php-fpm..."
+ynh_script_progression --message="Reloading nginx web server and php-fpm.." --weight=1
 
-systemctl reload php7.0-fpm
+systemctl reload php7.3-fpm
 systemctl reload nginx
 
 #=================================================
 # END OF SCRIPT
 #=================================================
 
-ynh_print_info "Restoration completed for $app"
+ynh_script_progression --message="Restoration completed for $app" --last
