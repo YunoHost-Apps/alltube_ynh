@@ -6,7 +6,7 @@
         "en": "A web interface for Youtube-dl",
         "fr": "Un interface web pour Youtube-dl"
     },
-    "version": "2.2.1~ynh2",
+    "version": "2.3.0~ynh1",
     "url": "http://alltubedownload.net/",
     "license": "GPL-3.0-only",
     "maintainer": {
