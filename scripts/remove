@@ -16,16 +16,12 @@ ynh_script_progression --message="Loading settings..." --weight=1
 
 app=$YNH_APP_INSTANCE_NAME
 
-domain=$(ynh_app_setting_get $app domain)
-port=$(ynh_app_setting_get $app port)
-db_name=$(ynh_app_setting_get $app db_name)
-db_user=$db_name
-final_path=$(ynh_app_setting_get $app final_path)
+domain=$(ynh_app_setting_get --app=$app --key=domain)
+final_path=$(ynh_app_setting_get --app=$app --key=final_path)
 
 #=================================================
 # STANDARD REMOVE
 #=================================================
-#=================================================#=================================================
 # REMOVE DEPENDENCIES
 #=================================================
 ynh_script_progression --message="Removing dependencies..." --weight=30
@@ -39,7 +35,7 @@ ynh_remove_app_dependencies
 ynh_script_progression --message="Removing app main directory..." --weight=30
 
 # Remove the app directory securely
-ynh_secure_remove "$final_path"
+ynh_secure_remove --file="$final_path"
 
 #=================================================
 # REMOVE NGINX CONFIGURATION
@@ -65,7 +61,7 @@ ynh_remove_fpm_config
 ynh_script_progression --message="Removing the dedicated system user..." --weight=5
 
 # Delete a system user
-ynh_system_user_delete $app
+ynh_system_user_delete --username=$app
 
 #=================================================
 # END OF SCRIPT
