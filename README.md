@@ -1,15 +1,15 @@
-# alltube app for YunoHost
+# AllTube app for YunoHost
 
 [![Integration level](https://dash.yunohost.org/integration/alltube.svg)](https://dash.yunohost.org/appci/app/alltube) ![](https://ci-apps.yunohost.org/ci/badges/alltube.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/alltube.maintain.svg)  
-[![Install alltube with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=alltube)
+[![Install AllTube with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=alltube)
 
 *[Lire ce readme en français.](./README_fr.md)*
 
-> *This package allow you to install alltube quickly and simply on a YunoHost server.
-If you don't have YunoHost, please see [here](https://yunohost.org/#/install) to know how to install and enjoy it.*
+> *This package allows you to install AllTube quickly and simply on a YunoHost server.  
+If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/install) to learn how to install it.*
 
 ## Overview
-alltube is a HTML GUI for Youtube-dl.
+AllTube is a HTML GUI for Youtube-dl.
 
 **Shipped version:** 2.3.0
 
@@ -30,15 +30,14 @@ How to configure this app:
 
  * No documentation, only a [FAQ](https://github.com/Rudloff/alltube/blob/master/resources/FAQ.md)
 
-#### Multi-users support
+#### Multi-user support
 
 There is no user account in the app.
 
 #### Supported architectures
 
-* x86-64b - [![Build Status](https://ci-apps.yunohost.org/ci/logs/alltube%20%28Community%29.svg)](https://ci-apps.yunohost.org/ci/apps/alltube/)
-* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/alltube%20%28Community%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/alltube/)
-* Jessie x86-64b - [![Build Status](https://ci-stretch.nohost.me/ci/logs/alltube%20%28Community%29.svg)](https://ci-stretch.nohost.me/ci/apps/alltube/)
+* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/alltube%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/alltube/)
+* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/alltube%20%28Apps%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/alltube/)
 
 
 ## Links
@@ -50,11 +49,10 @@ There is no user account in the app.
 
 ---
 
-Developers info
+Developer info
 ----------------
 
-**Only if you want to use a testing branch for coding, instead of merging directly into master.**
-Please do your pull request to the [testing branch](https://github.com/YunoHost-Apps/alltube_ynh/tree/testing).
+Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/alltube_ynh/tree/testing).
 
 To try the testing branch, please proceed like that.
 ```
