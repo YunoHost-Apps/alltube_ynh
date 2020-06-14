@@ -1,16 +1,15 @@
-# App exemple pour YunoHost
+# AllTube app pour YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/alltube.svg)](https://dash.yunohost.org/appci/app/alltube) ![](https://ci-apps.yunohost.org/ci/badges/alltube.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/alltube.maintain.svg)  
-[![Install alltube with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=alltube)
+[![Niveau d'intégration](https://dash.yunohost.org/integration/alltube.svg)](https://dash.yunohost.org/appci/app/alltube) ![](https://ci-apps.yunohost.org/ci/badges/alltube.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/alltube.maintain.svg)  
+[![Installer AllTube avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=alltube)
 
 *[Read this readme in english.](./README.md)*
 
-> *Ce package vous permet d'installer alltube rapidement et simplement sur un serveur Yunohost.
-Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
+> *Ce package vous permet d'installer AllTube rapidement et simplement sur un serveur Yunohost.  
+Si vous n'avez pas YunoHost, consultez [le guide](https://yunohost.org/#/install) pour apprendre comment l'installer.*
 
 ## Vue d'ensemble
 Alltube est une IHM web pour Youtube-dl.
-
 
 **Version incluse:** 2.3.0
 
@@ -32,17 +31,16 @@ Pour configurer Alltube :
 
  * Pas de documentation officelle, une simple [FAQ](https://github.com/Rudloff/alltube/blob/master/resources/FAQ.md)
 
-#### Support multi-utilisateurs
+#### Support multi-utilisateur
 
 Pas de compte utilisateur dans l'application
 
-#### Supported architectures
+#### Architectures supportées
 
-* x86-64b - [![Build Status](https://ci-apps.yunohost.org/ci/logs/alltube%20%28Community%29.svg)](https://ci-apps.yunohost.org/ci/apps/alltube/)
-* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/alltube%20%28Community%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/alltube/)
-* Jessie x86-64b - [![Build Status](https://ci-stretch.nohost.me/ci/logs/alltube%20%28Community%29.svg)](https://ci-stretch.nohost.me/ci/apps/alltube/)
+* x86-64b - [![Build Status](https://ci-apps.yunohost.org/ci/logs/alltube%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/alltube/)
+* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/alltube%20%28Apps%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/alltube/)
 
-## Links
+## Liens
 
  * Signaler un bug: https://github.com/YunoHost-Apps/alltube_ynh/issues
  * Site de l'application: https://alltubedownload.net/
@@ -54,7 +52,6 @@ Pas de compte utilisateur dans l'application
 Informations pour les développeurs
 ----------------
 
-**Seulement si vous voulez utiliser une branche de test pour le codage, au lieu de fusionner directement dans la banche principale.**
 Merci de faire vos pull request sur la [branche testing](https://github.com/YunoHost-Apps/alltube_ynh/tree/testing).
 
 Pour essayer la branche testing, procédez comme suit.
