@@ -3,8 +3,8 @@
     "id": "alltube",
     "packaging_format": 1,
     "description": {
-        "en": "A web interface for Youtube-dl",
-        "fr": "Un interface web pour Youtube-dl"
+        "en": "A Web interface for Youtube-dl",
+        "fr": "Une interface Web pour Youtube-dl"
     },
     "version": "2.3.0~ynh2",
     "url": "http://alltubedownload.net/",
