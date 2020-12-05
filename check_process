@@ -10,27 +10,17 @@
 		setup_nourl=0
 		setup_private=1
 		setup_public=1
-		upgrade=1	from_commit=1ad6db7eca1264ccd3cf92537aefca891878f095
+		upgrade=1
+		upgrade=1	from_commit=f172ccd39cb043c72fe214cb15ea2db53c9f0325
 		backup_restore=1
 		multi_instance=1
 		incorrect_path=1
 		port_already_use=0
 		change_url=1
-;;; Levels
-	Level 1=auto
-	Level 2=auto
-	Level 3=auto
-	Level 4=0
-	Level 5=auto
-	Level 6=auto
-	Level 7=auto
-	Level 8=0
-	Level 9=0
-	Level 10=0
 ;;; Options
 Email=plopoyop@gmail.com
 Notification=none
 ;;; Upgrade options
-	; commit=1ad6db7eca1264ccd3cf92537aefca891878f095
-		name=Tue Apr 16 20:49:40 2019 +0200 add upgrade script
+	; commit=f172ccd39cb043c72fe214cb15ea2db53c9f0325
+		name=Merge pull request #12 from ericgaspar/patch-1
 		manifest_arg=domain=DOMAIN&path=PATH&is_public=1&

@@ -1,10 +1,10 @@
 {
-    "name": "Alltube",
+    "name": "AllTube",
     "id": "alltube",
     "packaging_format": 1,
     "description": {
-        "en": "A Web interface for Youtube-dl",
-        "fr": "Une interface Web pour Youtube-dl"
+        "en": "Web interface for Youtube-dl",
+        "fr": "Interface Web pour Youtube-dl"
     },
     "version": "2.3.0~ynh2",
     "url": "http://alltubedownload.net/",
@@ -26,8 +26,8 @@
                 "name": "domain",
                 "type": "domain",
                 "ask": {
-                    "en": "Choose a domain name for Alltube",
-                    "fr": "Choisissez un nom de domaine pour Alltube"
+                    "en": "Choose a domain name for AllTube",
+                    "fr": "Choisissez un nom de domaine pour AllTube"
                 },
                 "example": "example.com"
             },
@@ -35,8 +35,8 @@
                 "name": "path",
                 "type": "path",
                 "ask": {
-                    "en": "Choose a path for Alltube",
-                    "fr": "Choisissez un chemin pour Alltube"
+                    "en": "Choose a path for AllTube",
+                    "fr": "Choisissez un chemin pour AllTube"
                 },
                 "example": "/alltube",
                 "default": "/alltube"

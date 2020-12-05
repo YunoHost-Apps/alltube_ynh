@@ -1,4 +1,4 @@
-# AllTube app pour YunoHost
+# AllTube pour YunoHost
 
 [![Niveau d'intégration](https://dash.yunohost.org/integration/alltube.svg)](https://dash.yunohost.org/appci/app/alltube) ![](https://ci-apps.yunohost.org/ci/badges/alltube.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/alltube.maintain.svg)  
 [![Installer AllTube avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=alltube)
@@ -9,7 +9,7 @@
 Si vous n'avez pas YunoHost, consultez [le guide](https://yunohost.org/#/install) pour apprendre comment l'installer.*
 
 ## Vue d'ensemble
-Alltube est une IHM web pour Youtube-dl.
+AllTube est une IHM web pour Youtube-dl.
 
 **Version incluse:** 2.3.0
 
@@ -21,11 +21,9 @@ Alltube est une IHM web pour Youtube-dl.
 
 * [Démo officielle](https://alltubedownload.net/)
 
-
 ## Configuration
 
-Pour configurer Alltube :
-> Edit config.yml file via SSH.
+Pour configurer AllTube : éditez le fichier `config.yml` via SSH.
 
 ## Documentation
 
@@ -37,7 +35,7 @@ Pas de compte utilisateur dans l'application
 
 #### Architectures supportées
 
-* x86-64b - [![Build Status](https://ci-apps.yunohost.org/ci/logs/alltube%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/alltube/)
+* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/alltube%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/alltube/)
 * ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/alltube%20%28Apps%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/alltube/)
 
 ## Liens
@@ -49,8 +47,7 @@ Pas de compte utilisateur dans l'application
 
 ---
 
-Informations pour les développeurs
-----------------
+## Informations pour les développeurs
 
 Merci de faire vos pull request sur la [branche testing](https://github.com/YunoHost-Apps/alltube_ynh/tree/testing).
 
