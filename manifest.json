@@ -1,5 +1,5 @@
 {
-    "name": "Alltube",
+    "name": "AllTube",
     "id": "alltube",
     "packaging_format": 1,
     "description": {
@@ -26,8 +26,8 @@
                 "name": "domain",
                 "type": "domain",
                 "ask": {
-                    "en": "Choose a domain name for Alltube",
-                    "fr": "Choisissez un nom de domaine pour Alltube"
+                    "en": "Choose a domain name for AllTube",
+                    "fr": "Choisissez un nom de domaine pour AllTube"
                 },
                 "example": "example.com"
             },
@@ -35,8 +35,8 @@
                 "name": "path",
                 "type": "path",
                 "ask": {
-                    "en": "Choose a path for Alltube",
-                    "fr": "Choisissez un chemin pour Alltube"
+                    "en": "Choose a path for AllTube",
+                    "fr": "Choisissez un chemin pour AllTube"
                 },
                 "example": "/alltube",
                 "default": "/alltube"
