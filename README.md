@@ -1,4 +1,4 @@
-# AllTube app for YunoHost
+# AllTube for YunoHost
 
 [![Integration level](https://dash.yunohost.org/integration/alltube.svg)](https://dash.yunohost.org/appci/app/alltube) ![](https://ci-apps.yunohost.org/ci/badges/alltube.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/alltube.maintain.svg)  
 [![Install AllTube with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=alltube)
@@ -23,8 +23,7 @@ AllTube is a HTML GUI for Youtube-dl.
 
 ## Configuration
 
-How to configure this app:
-> Edit config.yml file via SSH.
+How to configure this app: Edit `config.yml` file via SSH.
 
 ## Documentation
 
@@ -49,8 +48,7 @@ There is no user account in the app.
 
 ---
 
-Developer info
-----------------
+## Developer info
 
 Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/alltube_ynh/tree/testing).
 
