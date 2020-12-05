@@ -11,7 +11,7 @@
 		setup_private=1
 		setup_public=1
 		upgrade=1
-		upgrade=1	from_commit=419e1bb416a9542ddbdf4b8a4135db7faad244bc
+		upgrade=1	from_commit=f172ccd39cb043c72fe214cb15ea2db53c9f0325
 		backup_restore=1
 		multi_instance=1
 		incorrect_path=1
@@ -21,6 +21,6 @@
 Email=plopoyop@gmail.com
 Notification=none
 ;;; Upgrade options
-	; commit=419e1bb416a9542ddbdf4b8a4135db7faad244bc
-		name=Merge pull request #4 from YunoHost-Apps/update-to-2.2.1 
+	; commit=f172ccd39cb043c72fe214cb15ea2db53c9f0325
+		name=Merge pull request #12 from ericgaspar/patch-1
 		manifest_arg=domain=DOMAIN&path=PATH&is_public=1&
