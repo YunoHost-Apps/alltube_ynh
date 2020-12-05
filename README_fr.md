@@ -9,7 +9,7 @@
 Si vous n'avez pas YunoHost, consultez [le guide](https://yunohost.org/#/install) pour apprendre comment l'installer.*
 
 ## Vue d'ensemble
-Alltube est une IHM web pour Youtube-dl.
+AllTube est une IHM web pour Youtube-dl.
 
 **Version incluse:** 2.3.0
 
@@ -21,10 +21,9 @@ Alltube est une IHM web pour Youtube-dl.
 
 * [Démo officielle](https://alltubedownload.net/)
 
-
 ## Configuration
 
-Pour configurer Alltube : éditez le fichier `config.yml` via SSH.
+Pour configurer AllTube : éditez le fichier `config.yml` via SSH.
 
 ## Documentation
 
