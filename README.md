@@ -1,7 +1,7 @@
 # AllTube for YunoHost
 
 [![Integration level](https://dash.yunohost.org/integration/alltube.svg)](https://dash.yunohost.org/appci/app/alltube) ![](https://ci-apps.yunohost.org/ci/badges/alltube.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/alltube.maintain.svg)  
-[![Install AllTube with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=alltube)
+[![Install AllTube with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=alltube)
 
 *[Lire ce readme en français.](./README_fr.md)*
 
