@@ -11,7 +11,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 ## Overview
 AllTube is a HTML GUI for Youtube-dl.
 
-**Shipped version:** 2.3.0
+**Shipped version:** 3.0.0
 
 ## Screenshots
 
