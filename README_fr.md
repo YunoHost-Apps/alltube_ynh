@@ -4,48 +4,36 @@
 [![Installer AllTube avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=alltube)
 
 *[Read this readme in english.](./README.md)*
+*[Lire ce readme en français.](./README_fr.md)*
 
-> *Ce package vous permet d'installer AllTube rapidement et simplement sur un serveur Yunohost.  
-Si vous n'avez pas YunoHost, consultez [le guide](https://yunohost.org/#/install) pour apprendre comment l'installer.*
+> *Ce package vous permet d'installer AllTube rapidement et simplement sur un serveur YunoHost.
+Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
 
 ## Vue d'ensemble
-AllTube est une IHM web pour Youtube-dl.
 
-**Version incluse:** 3.0.0
+Interface Web pour Youtube-dl
+
+**Version incluse :** 3.0.0~ynh1
+
+**Démo :** https://alltubedownload.net/
 
 ## Captures d'écran
 
-![Captures d'écran](https://github.com/Rudloff/alltube/raw/master/img/screenshot.png "alltube IHM")
+![](./doc/screenshots/screenshot.png)
 
-## Démo
-
-* [Démo officielle](https://alltubedownload.net/)
+## Avertissements / informations importantes
 
 ## Configuration
 
 Pour configurer AllTube : éditez le fichier `config.yml` via SSH.
 
-## Documentation
+## Documentations et ressources
 
- * Pas de documentation officelle, une simple [FAQ](https://github.com/Rudloff/alltube/blob/master/resources/FAQ.md)
-
-#### Support multi-utilisateur
-
-Pas de compte utilisateur dans l'application
-
-#### Architectures supportées
-
-* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/alltube%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/alltube/)
-* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/alltube%20%28Apps%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/alltube/)
-
-## Liens
-
- * Signaler un bug: https://github.com/YunoHost-Apps/alltube_ynh/issues
- * Site de l'application: https://alltubedownload.net/
- * Sources de l'application: https://github.com/Rudloff/alltube
- * Site web YunoHost: https://yunohost.org/
-
----
+* Site officiel de l'app : https://alltubedownload.net/
+* Documentation officielle de l'admin : https://github.com/Rudloff/alltube/blob/master/resources/FAQ.md
+* Dépôt de code officiel de l'app : https://github.com/Rudloff/alltube
+* Documentation YunoHost pour cette app : https://yunohost.org/app_alltube
+* Signaler un bug : https://github.com/YunoHost-Apps/alltube_ynh/issues
 
 ## Informations pour les développeurs
 
@@ -57,3 +45,5 @@ sudo yunohost app install https://github.com/YunoHost-Apps/alltube_ynh/tree/test
 ou
 sudo yunohost app upgrade alltube -u https://github.com/YunoHost-Apps/alltube_ynh/tree/testing --debug
 ```
+
+**Plus d'infos sur le packaging d'applications :** https://yunohost.org/packaging_apps
