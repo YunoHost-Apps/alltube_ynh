@@ -8,13 +8,20 @@
     },
     "version": "3.0.0~ynh1",
     "url": "http://alltubedownload.net/",
+    "upstream": {
+        "license": "GPL-3.0-only",
+        "website": "https://alltubedownload.net/",
+        "demo": "https://alltubedownload.net/",
+        "admindoc": "https://github.com/Rudloff/alltube/blob/master/resources/FAQ.md",
+        "code": "https://github.com/Rudloff/alltube"
+    },
     "license": "GPL-3.0-only",
     "maintainer": {
         "name": "plopoyop",
         "email": "plopoyop@gmail.com"
     },
     "requirements": {
-        "yunohost": ">= 4.1.7"
+        "yunohost": ">= 4.2.0"
     },
     "multi_instance": true,
     "services": [
