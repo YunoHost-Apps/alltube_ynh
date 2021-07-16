@@ -25,7 +25,7 @@ Interface Web pour Youtube-dl
 
 ## Configuration
 
-Pour configurer AllTube : éditez le fichier `config.yml` via SSH.
+Pour configurer AllTube : éditez le fichier `/var/www/alltube/config/config.yml` via SSH.
 
 ## Documentations et ressources
 
