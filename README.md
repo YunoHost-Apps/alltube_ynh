@@ -25,6 +25,12 @@ Web interface for Youtube-dl
 
 ![](./doc/screenshots/screenshot.png)
 
+## Disclaimers / important information
+
+## Configuration
+
+To configure AllTube: edit the file `/var/www/alltube/config/config.yml` via SSH.
+
 ## Documentation and resources
 
 * Official app website: https://alltubedownload.net/
