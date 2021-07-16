@@ -14,8 +14,6 @@
 		upgrade=1	from_commit=f172ccd39cb043c72fe214cb15ea2db53c9f0325
 		backup_restore=1
 		multi_instance=1
-		incorrect_path=1
-		port_already_use=0
 		change_url=1
 ;;; Options
 Email=plopoyop@gmail.com
