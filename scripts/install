@@ -92,11 +92,12 @@ ynh_add_nginx_config
 ynh_script_progression --message="Configuring PHP-FPM..." --weight=1
 
 # Create a dedicated php-fpm config
-ynh_add_fpm_config --usage=low --footprint=low --package="$extra_php_dependencies"
+ynh_add_fpm_config --usage=low --footprint=low
 
 #=================================================
 # SPECIFIC SETUP
 #=================================================
+ynh_script_progression --message="Adding a configuration file..." --weight=1
 
 cp ../conf/config.yml "$final_path/config/"
 
