@@ -17,7 +17,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 Web interface for Youtube-dl
 
-**Shipped version:** 3.0.1~ynh1
+**Shipped version:** 3.0.2~ynh1
 
 **Demo:** https://alltubedownload.net/
 
