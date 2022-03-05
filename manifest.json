@@ -6,7 +6,7 @@
         "en": "Web interface for Youtube-dl",
         "fr": "Interface Web pour Youtube-dl"
     },
-    "version": "3.0.1~ynh1",
+    "version": "3.0.2~ynh1",
     "url": "http://alltubedownload.net/",
     "upstream": {
         "license": "GPL-3.0-only",
