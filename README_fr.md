@@ -17,7 +17,7 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 Interface Web pour Youtube-dl
 
-**Version incluse :** 3.0.1~ynh1
+**Version incluse :** 3.0.3~ynh1
 
 
 **Démo :** https://alltubedownload.net/
