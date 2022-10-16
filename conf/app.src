@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/Rudloff/alltube/releases/download/3.0.3/alltube-3.0.3.zip
-SOURCE_SUM=6db059df1ffad928df3f4507dc718d471e18e5949395c6631a71fde61091190d
+SOURCE_URL=https://github.com/Rudloff/alltube/releases/download/3.1.0/alltube-3.1.0.zip
+SOURCE_SUM=07c131c96b20259c078bb823d15d0c8cc3c74b01279aa8547ce90fc9b83b544b
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=zip
 SOURCE_IN_SUBDIR=true
