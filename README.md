@@ -17,8 +17,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 Web interface for Youtube-dl
 
-**Shipped version:** 3.0.3~ynh1
-
+**Shipped version:** 3.1.0~ynh1
 
 **Demo:** https://alltubedownload.net/
 
@@ -31,6 +30,10 @@ Web interface for Youtube-dl
 ## Configuration
 
 To configure AllTube: edit the file `/var/www/alltube/config/config.yml` via SSH.
+
+## :red_circle: Antifeatures
+
+- **Non-free Network Services**: Promotes or depends entirely on a non-free network service.
 
 ## Documentation and resources
 
