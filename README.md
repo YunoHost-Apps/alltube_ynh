@@ -19,8 +19,6 @@ Web interface for Youtube-dl
 
 **Shipped version:** 3.1.0~ynh1
 
-**Demo:** https://alltubedownload.net/
-
 ## Screenshots
 
 ![Screenshot of AllTube](./doc/screenshots/screenshot.png)
@@ -37,7 +35,6 @@ To configure AllTube: edit the file `/var/www/alltube/config/config.yml` via SSH
 
 ## Documentation and resources
 
-* Official app website: <https://alltubedownload.net/>
 * Official admin documentation: <https://github.com/Rudloff/alltube/blob/master/resources/FAQ.md>
 * Upstream app code repository: <https://github.com/Rudloff/alltube>
 * YunoHost documentation for this app: <https://yunohost.org/app_alltube>
