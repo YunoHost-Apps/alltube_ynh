@@ -22,7 +22,6 @@ Web GUI for youtube-dl
 
 ## Captures d’écran
 
-
 ![Capture d’écran de AllTube](./doc/screenshots/screenshot.png)
 
 ## :red_circle: Fonctions indésirables
