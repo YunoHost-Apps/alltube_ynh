@@ -11,8 +11,6 @@ maintainers = ["plopoyop"]
 
 [upstream]
 license = "GPL-3.0-only"
-website = "https://alltubedownload.net/"
-demo = "https://alltubedownload.net/"
 admindoc = "https://github.com/Rudloff/alltube/blob/master/resources/FAQ.md"
 code = "https://github.com/Rudloff/alltube"
 
