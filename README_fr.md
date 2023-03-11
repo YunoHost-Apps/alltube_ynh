@@ -16,21 +16,13 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 ## Vue d’ensemble
 
-Interface Web pour Youtube-dl
+Web GUI for youtube-dl 
 
-**Version incluse :** 3.1.0~ynh1
-
-**Démo :** https://alltubedownload.net/
+**Version incluse :** 3.1.1~ynh1
 
 ## Captures d’écran
 
 ![Capture d’écran de AllTube](./doc/screenshots/screenshot.png)
-
-## Avertissements / informations importantes
-
-## Configuration
-
-Pour configurer AllTube : éditez le fichier `/var/www/alltube/config/config.yml` via SSH.
 
 ## :red_circle: Fonctions indésirables
 
@@ -38,7 +30,6 @@ Pour configurer AllTube : éditez le fichier `/var/www/alltube/config/config.yml
 
 ## Documentations et ressources
 
-* Site officiel de l’app : <https://alltubedownload.net/>
 * Documentation officielle de l’admin : <https://github.com/Rudloff/alltube/blob/master/resources/FAQ.md>
 * Dépôt de code officiel de l’app : <https://github.com/Rudloff/alltube>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_alltube>
