@@ -1,0 +1,54 @@
+packaging_format = 2
+
+id = "alltube"
+name = "AllTube"
+description.en = "Web interface for Youtube-dl"
+description.fr = "Interface Web pour Youtube-dl"
+
+version = "3.1.1~ynh1"
+
+maintainers = ["plopoyop"]
+
+[upstream]
+license = "GPL-3.0-only"
+admindoc = "https://github.com/Rudloff/alltube/blob/master/resources/FAQ.md"
+code = "https://github.com/Rudloff/alltube"
+
+[integration]
+yunohost = ">= 11.1.14"
+architectures = "all"
+multi_instance = true
+ldap = false
+sso = false
+disk = "50M"
+ram.build = "150M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.path]
+    type = "path"
+    default = "/alltube"
+
+    [install.init_main_permission]
+    help.en = "If enabled, AllTube will be accessible by people who do not have an account. This can be changed later via the webadmin."
+    help.fr = "Si cette case est cochée, AllTube sera accessible aux personnes n’ayant pas de compte. Vous pourrez changer ceci plus tard via la webadmin."
+    type = "group"
+    default = "visitors"
+
+[resources]
+        [resources.sources.main]
+        url = "https://github.com/Rudloff/alltube/releases/download/3.1.1/alltube-3.1.1.zip"
+        sha256 = "e28ad51e96e0c9a02e3df5fd365f7b3b4df0fec5683447e6a9d978a66cbe27af"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.apt]
+    packages = "ffmpeg php8.0-intl php8.0-curl php8.0-gmp php8.0-mbstring"
