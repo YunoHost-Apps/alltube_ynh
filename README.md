@@ -18,9 +18,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 Web GUI for youtube-dl 
 
-**Shipped version:** 3.1.0~ynh1
-
-**Demo:** https://alltubedownload.net/
+**Shipped version:** 3.1.1~ynh1
 
 ## Screenshots
 
@@ -32,7 +30,6 @@ Web GUI for youtube-dl
 
 ## Documentation and resources
 
-* Official app website: <https://alltubedownload.net/>
 * Official admin documentation: <https://github.com/Rudloff/alltube/blob/master/resources/FAQ.md>
 * Upstream app code repository: <https://github.com/Rudloff/alltube>
 * YunoHost documentation for this app: <https://yunohost.org/app_alltube>
