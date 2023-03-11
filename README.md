@@ -16,7 +16,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-Web interface for Youtube-dl
+Web GUI for youtube-dl 
 
 **Shipped version:** 3.1.0~ynh1
 
@@ -25,12 +25,6 @@ Web interface for Youtube-dl
 ## Screenshots
 
 ![Screenshot of AllTube](./doc/screenshots/screenshot.png)
-
-## Disclaimers / important information
-
-## Configuration
-
-To configure AllTube: edit the file `/var/www/alltube/config/config.yml` via SSH.
 
 ## :red_circle: Antifeatures
 
