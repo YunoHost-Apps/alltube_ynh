@@ -16,7 +16,7 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 ## Vue d’ensemble
 
-Interface Web pour Youtube-dl
+Web GUI for youtube-dl 
 
 **Version incluse :** 3.1.0~ynh1
 
@@ -25,12 +25,6 @@ Interface Web pour Youtube-dl
 ## Captures d’écran
 
 ![Capture d’écran de AllTube](./doc/screenshots/screenshot.png)
-
-## Avertissements / informations importantes
-
-## Configuration
-
-Pour configurer AllTube : éditez le fichier `/var/www/alltube/config/config.yml` via SSH.
 
 ## :red_circle: Fonctions indésirables
 
