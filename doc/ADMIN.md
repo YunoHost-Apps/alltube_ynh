@@ -1,3 +1,3 @@
 ## Configuration
 
-To configure AllTube: edit the file `/var/www/alltube/config/config.yml` via SSH.
+To configure AllTube: edit the file `__INSTALL_DIR__/config/config.yml` via SSH.

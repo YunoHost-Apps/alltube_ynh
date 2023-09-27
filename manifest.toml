@@ -15,7 +15,7 @@ admindoc = "https://github.com/Rudloff/alltube/blob/master/resources/FAQ.md"
 code = "https://github.com/Rudloff/alltube"
 
 [integration]
-yunohost = ">= 11.1.14"
+yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
 ldap = false
@@ -42,6 +42,7 @@ ram.runtime = "50M"
         [resources.sources.main]
         url = "https://github.com/Rudloff/alltube/releases/download/3.1.1/alltube-3.1.1.zip"
         sha256 = "e28ad51e96e0c9a02e3df5fd365f7b3b4df0fec5683447e6a9d978a66cbe27af"
+        autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
 
@@ -51,4 +52,4 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "ffmpeg php8.0-intl php8.0-curl php8.0-gmp php8.0-mbstring"
+    packages = "ffmpeg, php8.0-intl, php8.0-curl, php8.0-gmp, php8.0-mbstring"
