@@ -32,7 +32,7 @@ Web GUI for youtube-dl
 
 * Documentation officielle de l’admin : <https://github.com/Rudloff/alltube/blob/master/resources/FAQ.md>
 * Dépôt de code officiel de l’app : <https://github.com/Rudloff/alltube>
-* Documentation YunoHost pour cette app : <https://yunohost.org/app_alltube>
+* YunoHost Store: <https://apps.yunohost.org/app/alltube>
 * Signaler un bug : <https://github.com/YunoHost-Apps/alltube_ynh/issues>
 
 ## Informations pour les développeurs
